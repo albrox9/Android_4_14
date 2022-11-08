@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">Android_4_14</string>
+    <string name="app_name">Calories</string>
+    <string name="ok_message">OK. CORRECT MENU</string>
+    <string name="notok_message">INCORRECT MENU</string>
+    <string name="light_menu">Light (1000 cal)</string>
+    <string name="normal_menu">Normal(1000-2000 cal)</string>
+    <string name="fatty_menu">Fatty (2000 cal)</string>
+    <string name="broccoli">Brócoli (100 cal)</string>
+    <string name="york_ham">Jamón York (500 cal)</string>
+    <string name="hamburguer">Hamburguesa (1500 cal)</string>
+    <string name="torreznos">Torreznos (2000 cal)</string>
 </resources>
