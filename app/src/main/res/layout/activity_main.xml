@@ -8,14 +8,13 @@
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="192dp"
-        android:layout_height="161dp"
-        app:layout_constraintBottom_toTopOf="@+id/tv1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.207">
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/gHM"
+        app:layout_constraintEnd_toStartOf="@+id/gDcha"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/gIz"
+        app:layout_constraintTop_toTopOf="@+id/gHA">
 
         <RadioButton
             android:id="@+id/rd1"
@@ -34,58 +33,103 @@
             android:layout_width="match_parent"
             android:layout_height="58dp"
             android:text="@string/fatty_menu" />
+
     </RadioGroup>
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="196dp"
-        android:layout_height="200dp"
-        android:layout_marginBottom="88dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/tv1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
-
-        <CheckBox
-            android:id="@+id/ch1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/broccoli" />
-
-        <CheckBox
-            android:id="@+id/ch2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/york_ham" />
-
-        <CheckBox
-            android:id="@+id/ch3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/hamburguer" />
-
-        <CheckBox
-            android:id="@+id/ch4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/torreznos" />
-    </LinearLayout>
 
     <TextView
         android:id="@+id/tv1"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="132dp"
         android:text="TU MENU ES = "
         android:textAlignment="center"
         android:textColor="#009688"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gDcha"
+        app:layout_constraintStart_toStartOf="@+id/gIz"
+        app:layout_constraintTop_toTopOf="@+id/gHM2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gIz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gDcha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gHA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gHM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="190dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gHM2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="482dp" />
+
+    <CheckBox
+        android:id="@+id/ch1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/broccoli"
+        app:layout_constraintEnd_toStartOf="@+id/gDcha"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gIz"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <CheckBox
+        android:id="@+id/ch2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/york_ham"
+        app:layout_constraintEnd_toStartOf="@+id/gDcha"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/gIz"
+        app:layout_constraintTop_toBottomOf="@+id/ch1" />
+
+    <CheckBox
+        android:id="@+id/ch3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/hamburguer"
+        app:layout_constraintEnd_toStartOf="@+id/gDcha"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/gIz"
+        app:layout_constraintTop_toBottomOf="@+id/ch2" />
+
+    <CheckBox
+        android:id="@+id/ch4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/torreznos"
+        app:layout_constraintBottom_toTopOf="@+id/gHM2"
+        app:layout_constraintEnd_toStartOf="@+id/gDcha"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gIz"
+        app:layout_constraintTop_toBottomOf="@+id/ch3"
+        app:layout_constraintVertical_bias="0.098" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
