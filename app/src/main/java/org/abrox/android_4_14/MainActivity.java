@@ -2,12 +2,14 @@ package org.abrox.android_4_14;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -102,8 +104,8 @@ public class MainActivity extends AppCompatActivity {
         mensaje += " te estas comiendo %1$d calorias ";
         mensaje = String.format(mensaje, calorias);
 
-        this.tv.setText(mensaje);
-
+        //Podemos cambiar el primer parámetro por this, para referirnos al contexto.
+        Toast.makeText(getApplicationContext(), mensaje, Toast.LENGTH_SHORT).show();
     }
 
    /* private void sumarCalorias(int checkedId, int sumaTotal, TextView tv) {
